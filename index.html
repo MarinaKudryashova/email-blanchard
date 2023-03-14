@@ -38,18 +38,14 @@
 			display: inline;
       opacity: 1;
       visibility: visible;
-      width: 100%;
-      height: 100%;
 		}
     .img-mobile {
 			display: none;
       opacity:0;
       visibility:hidden;
-      width:0;
-      height:0;
 		}
 
-    @media screen and (max-width: 412.98px) {
+    @media screen and (max-device-width: 479px) {
       .header-padding {
         padding-top: 17px !important;
         padding-bottom: 17px !important;
@@ -59,18 +55,14 @@
         padding-left: 18px !important;
       }
       .img-desktop {
-			display: none!important;
-      opacity: 0!important;
-      visibility: hidden!important;
-      width:0!important;
-      height:0!important;
+        display: none!important;
+        opacity: 0!important;
+        visibility: hidden!important;
 		  }
       .img-mobile {
-			display: inline!important;
-      opacity: 1!important;
-      visibility: visible!important;
-      width: 100%!important;
-      height: 100%!important;
+        display: inline!important;
+        opacity: 1!important;
+        visibility: visible!important;
 		  }
       .mobile-col-padding {
         padding-right: 0 !important;
@@ -131,8 +123,16 @@
               <tr>
                 <td align="center" style="padding-top: 30px; padding-bottom: 28px; text-align: center;" class="header-padding">
                   <a href="https://marinakudryashova.github.io/coursework__blanchard/" target="_blank" style="text-align: center;">
-                    <img align="middle" src="https://i.postimg.cc/brPD2DtJ/logo-2x.png" alt="Логотип хужожественной галереи Blanchard" width="187" height="42" style="width: 100%; max-width: 187px;" class="img-desktop"/>
-                    <img align="middle" src="https://i.postimg.cc/dV37dKL8/logo-mobile-2x.png" alt="Логотип хужожественной галереи Blanchard" width="114" style="width: 100%; max-width: 114px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                        <td align="center" style="text-align: center;" class="img-desktop">
+                            <img align="middle" src="https://i.postimg.cc/brPD2DtJ/logo-2x.png" alt="Логотип хужожественной галереи Blanchard" width="187" height="42" style="width: 100%; max-width: 187px;"/>
+                        </td>
+                        <td align="center" style="text-align: center;" class="img-mobile">
+                            <img align="middle" src="https://i.postimg.cc/dV37dKL8/logo-mobile-2x.png" alt="Логотип хужожественной галереи Blanchard" width="114" style="width: 100%; max-width: 114px!important;"/>
+                        </td>
+                      </tr>
+                    </table>
                   </a>
                 </td>
               </tr>
@@ -146,9 +146,11 @@
           <td>
             <table  align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
               <tr>
-                <td>
-                  <img src="https://i.postimg.cc/vT88sWnW/promo-2x.jpg" alt="красивый пруд с кувшинками в зеленном лесу" width="600" style="width: 100%; max-width: 600px;background-color: #dde0e1;" class="img-desktop"/>
-                  <img src="https://i.postimg.cc/1tQ5Wx57/promo-mobile-2x.jpg" alt="красивый пруд с кувшинками в зеленном лесу" width="400" style="width: 100%; max-width: 400px;background-color: #dde0e1;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                <td class="img-desktop">
+                  <img src="https://i.postimg.cc/vT88sWnW/promo-2x.jpg" alt="красивый пруд с кувшинками в зеленном лесу" width="600" style="width: 100%; max-width: 600px;background-color: #dde0e1;" />
+                </td>
+                <td class="img-mobile">
+                  <img src="https://i.postimg.cc/1tQ5Wx57/promo-mobile-2x.jpg" alt="красивый пруд с кувшинками в зеленном лесу" width="400" style="width: 100%;background-color: #dde0e1;" />
                 </td>
               </tr>
               <tr>
@@ -191,9 +193,11 @@
                       <td style="padding: 21px 0 0 0;">
                         <table  border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;">
-                              <img src="https://i.postimg.cc/hPSQDmnZ/gogen-2x.jpg" alt="Картина Гогена - Вангог рисует подсолнухи" width="520" style="width: 100%; max-width: 600px;" class="img-desktop"/>
-                              <img src="https://i.postimg.cc/wBtmKdz6/gogen-mobile-2x.jpg" alt="Картина Гогена - Вангог рисует подсолнухи" width="420" style="width: 100%; max-width: 420px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-desktop">
+                              <img src="https://i.postimg.cc/hPSQDmnZ/gogen-2x.jpg" alt="Картина Гогена - Вангог рисует подсолнухи" width="520" style="width: 100%; max-width: 600px;" />
+                            </td>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-mobile">
+                              <img src="https://i.postimg.cc/wBtmKdz6/gogen-mobile-2x.jpg" alt="Картина Гогена - Вангог рисует подсолнухи" width="100%" style="width: 100%; max-width: 420px;" />
                             </td>
                           </tr>
                           <tr>
@@ -213,9 +217,11 @@
                       <td style="padding: 21px 0 0 0;">
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;">
-                              <img src="https://i.postimg.cc/V6Wsp7Jf/renuar-2x.jpg" alt="Картина Ренуара  - Женщина в черном" width="520" style="width: 100%; max-width: 600px;" class="img-desktop"/>
-                              <img src="https://i.postimg.cc/QNSxqyLS/renuar-mobile-2x.jpg" alt="Картина Ренуара  - Женщина в черном" width="420" style="width: 100%; max-width: 420px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-desktop">
+                              <img src="https://i.postimg.cc/V6Wsp7Jf/renuar-2x.jpg" alt="Картина Ренуара  - Женщина в черном" width="520" style="width: 100%; max-width: 600px;"/>
+                            </td>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-mobile">
+                              <img src="https://i.postimg.cc/QNSxqyLS/renuar-mobile-2x.jpg" alt="Картина Ренуара  - Женщина в черном" width="420" style="width: 100%; max-width: 420px;"/>
                             </td>
                           </tr>
                           <tr>
@@ -235,9 +241,11 @@
                       <td style="padding: 21px 0 0 0;">
                         <table  border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;">
-                              <img src="https://i.postimg.cc/9FFz5jPv/mone-2x.jpg" alt="Картина Моне - Маковое поле" width="520" style="width: 100%;height: 100%; max-width: 600px;" class="img-desktop"/>
-                              <img src="https://i.postimg.cc/c1c6bJ3R/mone-mobile-2x.jpg" alt="Картина Моне - Маковое поле" width="420" style="width: 100%; max-width: 420px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-desktop">
+                              <img src="https://i.postimg.cc/9FFz5jPv/mone-2x.jpg" alt="Картина Моне - Маковое поле" width="520" style="width: 100%;height: 100%; max-width: 600px;"/>
+                            </td>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-mobile">
+                              <img src="https://i.postimg.cc/c1c6bJ3R/mone-mobile-2x.jpg" alt="Картина Моне - Маковое поле" width="420" style="width: 100%; max-width: 420px; border:0;"/>
                             </td>
                           </tr>
                           <tr>
@@ -257,9 +265,11 @@
                       <td style="padding: 21px 0 0 0;">
                         <table  border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;">
-                              <img src="https://i.postimg.cc/zfRVtSwv/mane-2x.jpg" alt="Картина Мане - Завтрак на траве" width="520" style="width: 100%;height: 100%; max-width: 600px;" class="img-desktop"/>
-                              <img src="https://i.postimg.cc/1tG4PmjZ/mane-mobile-2x.jpg" alt="Картина Мане - Завтрак на траве" width="420" style="width: 100%; max-width: 420px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-desktop">
+                              <img src="https://i.postimg.cc/zfRVtSwv/mane-2x.jpg" alt="Картина Мане - Завтрак на траве" width="520" style="width: 100%;height: 100%; max-width: 600px;"/>
+                            </td>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-mobile">
+                              <img src="https://i.postimg.cc/1tG4PmjZ/mane-mobile-2x.jpg" alt="Картина Мане - Завтрак на траве" width="420" style="width: 100%; max-width: 420px;"/>
                             </td>
                           </tr>
                           <tr>
@@ -279,9 +289,11 @@
                       <td style="padding: 21px 0 0 0;">
                         <table  border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;">
-                              <img src="https://i.postimg.cc/fbxMSHjc/vangog-2x.jpg" alt="Картина Ван Гога - Звездная ночь" width="520" style="width: 100%;height: 100%; max-width:600px;" class="img-desktop"/>
-                              <img src="https://i.postimg.cc/CxnhSMR6/vangog-mobile-2x.jpg" alt="Картина Ван Гога - Звездная ночь" width="420" style="width: 100%; max-width: 420px;display: none;opacity:0;visibility:hidden;" class="img-mobile"/>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;"  class="img-desktop">
+                              <img src="https://i.postimg.cc/fbxMSHjc/vangog-2x.jpg" alt="Картина Ван Гога - Звездная ночь" width="520" style="width: 100%;height: 100%; max-width:600px;"/>
+                            </td>
+                            <td style="padding: 0 0 21px 0;width: 100%;height: 100%;" class="img-mobile">
+                              <img src="https://i.postimg.cc/CxnhSMR6/vangog-mobile-2x.jpg" alt="Картина Ван Гога - Звездная ночь" width="420" style="width: 100%; max-width: 420px;"/>
                             </td>
                           </tr>
                           <tr>
